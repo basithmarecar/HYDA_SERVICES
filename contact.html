@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Devis nettoyage canapé, matelas et voiture | HYDA SERVICES</title>
+
+    <meta name="description"
+        content="Demandez votre devis gratuit pour le nettoyage de canapé, matelas, fauteuil ou intérieur automobile à Garges-lès-Gonesse et dans le Val-d'Oise.">
+
+    <meta name="keywords"
+        content="devis nettoyage canapé, nettoyage matelas Garges-lès-Gonesse, nettoyage voiture Val-d'Oise, nettoyage fauteuil Sarcelles">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                HYDA SERVICES
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Ouvrir le menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            À propos
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            id="servicesDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Services
+
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark">
+
+                            <li>
+                                <a class="dropdown-item" href="services-maison.html">
+                                    <i class="bi bi-house-door me-2"></i>
+                                    Maison
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="services-automobile.html">
+                                    <i class="bi bi-car-front me-2"></i>
+                                    Automobile
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="calandrier.html">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Rendez-vous
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">
+                            Réalisations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="contact.html" class="btn btn-primary-custom">
+                            Devis gratuit
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Header -->
+
+    <section class="page-header">
+
+        <div class="container text-center">
+
+            <h1>Demandez votre devis gratuit</h1>
+
+            <p class="lead mt-3">
+
+                Sélectionnez votre prestation et obtenez une estimation immédiate.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact-form">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- Formulaire -->
+
+                <div class="col-lg-7">
+
+                    <div class="glass-card contact-form reveal">
+
+                        <h2 class="mb-4 text-dark">
+
+                            Configurer votre prestation
+
+                        </h2>
+
+                        <form id="quote-form">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="nom" class="form-label">
+                                        Nom complet
+                                    </label>
+
+                                    <input type="text"
+                                        id="nom"
+                                        class="form-control"
+                                        placeholder="Votre nom">
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label for="telephone" class="form-label">
+                                        Téléphone
+                                    </label>
+
+                                    <input type="tel"
+                                        id="telephone"
+                                        class="form-control"
+                                        placeholder="06 12 34 56 78">
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label for="email" class="form-label">
+                                        Email
+                                    </label>
+
+                                    <input type="email"
+                                        id="email"
+                                        class="form-control"
+                                        placeholder="votre@email.fr">
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label for="service-select" class="form-label">
+                                        Type de prestation
+                                    </label>
+
+                                    <select id="service-select"
+                                        class="form-select">
+
+                                        <option value="">
+                                            Choisissez un service
+                                        </option>
+
+                                        <optgroup label="Maison">
+                                            
+                                            <option value="fauteuil">Nettoyage fauteuil - 40€</option>
+                                            <option value="canape-2-3">Nettoyage canapé 2/3 places - 60€</option>
+                                            <option value="canape-4-5">Nettoyage canapé 4/5 places - 70€</option>
+                                            <option value="canape-u">Nettoyage canapé en U - 80€</option>
+                                            <option value="pouf">Nettoyage pouf - 19€</option>
+                                            <option value="chaises-4-6">Nettoyage lot de 4 à 6 chaises - 50€</option>
+                                            <option value="matelas-1p">Nettoyage matelas 1 place - 40€</option>
+                                            <option value="matelas-2p">Nettoyage matelas 2 places - 60€</option>
+                                            <option value="coussins">Nettoyage coussins - 10€</option>
+                                            <option value="tapis">Nettoyage tapis - Sur devis</option>
+                                            <option value="vitres">Nettoyage vitres - Sur devis</option>
+                                            <option value="terrasse">Nettoyage terrasse - Sur devis</option>
+                                            <option value="fin-chantier">Nettoyage fin de chantier - Sur devis</option>
+                                        </optgroup>
+
+                                        <optgroup label="Automobile">
+
+                                            <option value="auto-standard">Formule Standard - 29€</option>
+                                            <option value="auto-premium">Formule Premium - 69€</option>
+
+                                        </optgroup>
+
+                                    </select>
+
+                                </div>
+
+                                <!-- Service sélectionné -->
+
+                                <div class="col-12">
+
+                                    <div id="selected-service"
+                                        class="selected-service d-none">
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Options -->
+
+                                <div class="col-12">
+
+                                    <div id="options-container"
+                                        class="options-container">
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Prix -->
+
+                                <div class="col-12">
+
+                                    <div class="price-box text-center">
+
+                                        <h4>Prix estimé</h4>
+
+                                        <p id="total-price"
+                                            class="price-total">
+
+                                            0€
+
+                                        </p>
+
+                                        <small class="text-muted">
+
+                                            Le prix peut varier selon l'état du textile.
+
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <label for="message" class="form-label">
+
+                                        Informations complémentaires
+
+                                    </label>
+
+                                    <textarea id="message"
+                                        class="form-control"
+                                        rows="5"
+                                        placeholder="Précisez vos besoins, votre adresse ou vos disponibilités..."></textarea>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <button type="button"
+                                        id="whatsapp-btn"
+                                        class="btn btn-primary-custom w-100">
+
+                                        <i class="bi bi-whatsapp me-2"></i>
+
+                                        Envoyer ma demande sur WhatsApp
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Informations -->
+
+                <div class="col-lg-5">
+
+                    <div class="glass-card h-100 reveal">
+
+                        <h2 class="mb-4 text-dark">
+
+                            Nos coordonnées
+
+                        </h2>
+
+                        <div class="contact-item mb-4">
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                            <div>
+
+                                <h5>Téléphone</h5>
+
+                                <a href="tel:+33672519938">
+                                    06 72 51 99 38
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="contact-item mb-4">
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                            <div>
+
+                                <h5>Email</h5>
+
+                                <a href="mailto:hydaservices@gmail.com">
+                                    hydaservices@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="contact-item mb-4">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                            <div>
+
+                                <h5>Zone d'intervention</h5>
+
+                                <p class="mb-0">
+
+                                    Garges-lès-Gonesse, Sarcelles, Gonesse, Arnouville et tout le Val-d'Oise.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                            <!-- Google Maps -->
+
+                                <div class="container">
+
+                                    <div class="map-container reveal">
+
+                                        <iframe
+                                            src="https://maps.google.com/maps?q=9%20Rue%20Fran%C3%A7ois%20Mansart%2095140%20Garges-l%C3%A8s-Gonesse&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                            allowfullscreen
+                                            loading="lazy">
+                                        </iframe>
+
+                                    </div>
+
+                                </div>
+
+                        <div class="social-links mt-4">
+
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-tiktok"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h4>HYDA SERVICES</h4>
+
+            <p>
+                Redonnez vie à vos canapés, matelas et intérieurs automobiles.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- WhatsApp flottant -->
+
+    <a href="https://wa.me/33672519938"
+        class="whatsapp-btn"
+        target="_blank">
+
+        <i class="bi bi-whatsapp"></i>
+
+    </a>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
