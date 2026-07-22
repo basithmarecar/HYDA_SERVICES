@@ -22,12 +22,18 @@
 
     <!-- Bootstrap Icons -->
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
 
 </head>
 
@@ -43,13 +49,8 @@
                 HYDA SERVICES
             </a>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarContent"
-                aria-controls="navbarContent"
-                aria-expanded="false"
-                aria-label="Ouvrir le menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Ouvrir le menu">
 
                 <span class="navbar-toggler-icon"></span>
 
@@ -73,12 +74,8 @@
 
                     <li class="nav-item dropdown">
 
-                        <a class="nav-link dropdown-toggle"
-                            href="#"
-                            id="servicesDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
 
                             Services
 
@@ -185,10 +182,7 @@
                                         Nom complet
                                     </label>
 
-                                    <input type="text"
-                                        id="nom"
-                                        class="form-control"
-                                        placeholder="Votre nom">
+                                    <input type="text" id="nom" class="form-control" placeholder="Votre nom">
 
                                 </div>
 
@@ -198,10 +192,7 @@
                                         Téléphone
                                     </label>
 
-                                    <input type="tel"
-                                        id="telephone"
-                                        class="form-control"
-                                        placeholder="06 12 34 56 78">
+                                    <input type="tel" id="telephone" class="form-control" placeholder="06 12 34 56 78">
 
                                 </div>
 
@@ -211,10 +202,7 @@
                                         Email
                                     </label>
 
-                                    <input type="email"
-                                        id="email"
-                                        class="form-control"
-                                        placeholder="votre@email.fr">
+                                    <input type="email" id="email" class="form-control" placeholder="votre@email.fr">
 
                                 </div>
 
@@ -224,15 +212,14 @@
                                         Type de prestation
                                     </label>
 
-                                    <select id="service-select"
-                                        class="form-select">
+                                    <select id="service-select" class="form-select">
 
                                         <option value="">
                                             Choisissez un service
                                         </option>
 
                                         <optgroup label="Maison">
-                                            
+
                                             <option value="fauteuil">Nettoyage fauteuil - 40€</option>
                                             <option value="canape-2-3">Nettoyage canapé 2/3 places - 60€</option>
                                             <option value="canape-4-5">Nettoyage canapé 4/5 places - 70€</option>
@@ -263,8 +250,7 @@
 
                                 <div class="col-12">
 
-                                    <div id="selected-service"
-                                        class="selected-service d-none">
+                                    <div id="selected-service" class="selected-service d-none">
 
                                     </div>
 
@@ -274,8 +260,7 @@
 
                                 <div class="col-12">
 
-                                    <div id="options-container"
-                                        class="options-container">
+                                    <div id="options-container" class="options-container">
 
                                     </div>
 
@@ -289,8 +274,7 @@
 
                                         <h4>Prix estimé</h4>
 
-                                        <p id="total-price"
-                                            class="price-total">
+                                        <p id="total-price" class="price-total">
 
                                             0€
 
@@ -314,18 +298,14 @@
 
                                     </label>
 
-                                    <textarea id="message"
-                                        class="form-control"
-                                        rows="5"
+                                    <textarea id="message" class="form-control" rows="5"
                                         placeholder="Précisez vos besoins, votre adresse ou vos disponibilités..."></textarea>
 
                                 </div>
 
                                 <div class="col-12">
 
-                                    <button type="button"
-                                        id="whatsapp-btn"
-                                        class="btn btn-primary-custom w-100">
+                                    <button type="button" id="whatsapp-btn" class="btn btn-primary-custom w-100">
 
                                         <i class="bi bi-whatsapp me-2"></i>
 
@@ -405,21 +385,20 @@
 
                         </div>
 
-                            <!-- Google Maps -->
+                        <!-- Google Maps -->
 
-                                <div class="container">
+                        <div class="container">
 
-                                    <div class="map-container reveal">
+                            <div class="map-container reveal">
 
-                                        <iframe
-                                            src="https://maps.google.com/maps?q=9%20Rue%20Fran%C3%A7ois%20Mansart%2095140%20Garges-l%C3%A8s-Gonesse&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                            allowfullscreen
-                                            loading="lazy">
-                                        </iframe>
+                                <iframe
+                                    src="https://maps.google.com/maps?q=9%20Rue%20Fran%C3%A7ois%20Mansart%2095140%20Garges-l%C3%A8s-Gonesse&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    allowfullscreen loading="lazy">
+                                </iframe>
 
-                                    </div>
+                            </div>
 
-                                </div>
+                        </div>
 
                         <div class="social-links mt-4">
 
@@ -454,9 +433,7 @@
 
     <!-- WhatsApp flottant -->
 
-    <a href="https://wa.me/33672519938"
-        class="whatsapp-btn"
-        target="_blank">
+    <a href="https://wa.me/33672519938" class="whatsapp-btn" target="_blank">
 
         <i class="bi bi-whatsapp"></i>
 
