@@ -198,14 +198,21 @@
     <section class="py-5">
 
         <div class="container">
-            <p class="lead mt-3">
-                Merci d'indiquer votre <strong>numéro de téléphone</strong> et le <strong>type de prestation
-                souhaité</strong></type> dans la section <strong>« Notes supplémentaires »</strong>.
-            </p>
 
             <div class="glass-card p-4 shadow-lg">
+                <div>
 
-                <div id="my-cal-inline-rendez-vous"></div>
+                <!-- Début de widget en ligne Calendly -->
+
+                <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/hydaservices/nouvelle-reunion?hide_gdpr_banner=1"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
+
+                <!-- Fin de widget en ligne Calendly -->
+
+            </div>
 
             </div>
 
@@ -367,28 +374,9 @@
 
     </section>
 
-    <!-- ========================= -->
-    <!-- Cal.com -->
-    <!-- ========================= -->
 
-    <!-- Cal inline embed code begins -->
-    <script type="text/javascript">
-        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
-        Cal("init", "rendez-vous", { origin: "https://app.cal.eu" });
-        Cal.config = Cal.config || {};
-        Cal.config.forwardQueryParams = true;
 
-        Cal.ns["rendez-vous"]("inline", {
-            elementOrSelector: "#my-cal-inline-rendez-vous",
-            config: { "layout": "month_view", "useSlotsViewOnSmallScreen": "true", "theme": "light" },
-            calLink: "hydaservices/rendez-vous",
-        });
-
-        Cal.ns["rendez-vous"]("ui", { "theme": "light", "hideEventTypeDetails": false, "layout": "month_view" });
-    </script>
-    <!-- Cal inline embed code ends -->
-
-       <!-- CTA -->
+    <!-- CTA -->
 
     <section class="cta-section">
 
