@@ -165,8 +165,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "canape-u": 80,
         "pouf": 19,
         "chaises-4-6": 50,
-        "matelas-1p": 40,
-        "matelas-2p": 60,
+        "matelas-bebe": 40,
+        "matelas-1-place": 50,
+        "matelas-2-places": 70,
         "coussins": 10,
 
         "tapis": 0,
